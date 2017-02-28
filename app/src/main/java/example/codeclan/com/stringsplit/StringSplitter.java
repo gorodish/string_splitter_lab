@@ -1,13 +1,20 @@
 package example.codeclan.com.stringsplit;
 
+import java.util.ArrayList;
+
 /**
  * Created by user on 27/02/2017.
  */
 
 public class StringSplitter {
 
+    protected ArrayList<String> stringsplitter;
     private String input;
-    private String x;
+
+    public StringSplitter() {
+        stringsplitter = new ArrayList<String >();
+        countWords();
+    }
 
     public StringSplitter(String input) {
         this.input = input;
